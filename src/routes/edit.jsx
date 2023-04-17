@@ -16,17 +16,17 @@ export default function EditContact() {
   return (
     <Form method="post" id="contact-form">
       <p>
-        <span>Name</span>
+        <span>Nome</span>
         <input
-          placeholder="First"
+          placeholder="Primeiro nome"
           aria-label="First name"
           type="text"
           name="first"
           defaultValue={contact.first}
         />
         <input
-          placeholder="Last"
-          aria-label="Last name"
+          placeholder="Ultimo nome"
+          aria-label="Last"
           type="text"
           name="last"
           defaultValue={contact.last}
@@ -37,7 +37,7 @@ export default function EditContact() {
         <input
           type="text"
           name="instagram"
-          placeholder="@jack"
+          placeholder="@cairesdev"
           defaultValue={contact.instagram}
         />
       </label>
@@ -52,18 +52,18 @@ export default function EditContact() {
         />
       </label>
       <label>
-        <span>Notes</span>
+        <span>Notas</span>
         <textarea name="notes" defaultValue={contact.notes} rows={6} />
       </label>
       <p>
-        <button type="submit">Save</button>
+        <button type="submit">Salvar</button>
         <button
           type="button"
           onClick={() => {
             navigate(-1);
           }}
         >
-          Cancel
+          Cancelar
         </button>
       </p>
     </Form>

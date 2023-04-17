@@ -55,18 +55,18 @@ export default function Contact() {
 
         <div>
           <Form action="edit">
-            <button type="submit">Edit</button>
+            <button type="submit">Editar</button>
           </Form>
           <Form
             method="post"
             action="destroy"
             onSubmit={(event) => {
-              if (!confirm("Please confirm you want to delete this record.")) {
+              if (!confirm("Por favor, confirme para deletar.")) {
                 event.preventDefault();
               }
             }}
           >
-            <button type="submit">Delete</button>
+            <button type="submit">Deletar</button>
           </Form>
         </div>
       </div>
